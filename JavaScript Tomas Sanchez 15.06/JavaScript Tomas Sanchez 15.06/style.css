@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: rgb(38,0,255);
+background: linear-gradient(0deg, rgba(38,0,255,1) 0%, rgba(255,255,255,1) 74%);
+  }
+
+  html {
+  text-align: center;
+  
+  }
+  
+  
+  input[type="number"] {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  
+}
+  
+ 
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .comentario 
+	{
+		background-color: #f2f2f2;
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+
+  h1, .card-title {
+    
+    background-image: linear-gradient(to right, #00F260, #f79d00, #0575E6, #64f38c); 
+ -webkit-background-clip: text;
+color: transparent;
+background-size: 300%;
+background-position: -100%;
+animation: animatedtext 5s infinite alternate-reverse
+
+}
+
+@keyframes animatedtext {
+ to {
+    background-position: 100%;
+ }
+
+}
+
+button {
+padding: 1.3em 3em;
+font-size: 12px;
+text-transform: uppercase;
+letter-spacing: 2.5px;
+font-weight: 500;
+color: #000000;
+background-color: #2f00ff;
+border: none;
+border-radius: 45px;
+box-shadow: 0px 8px 15px rgba(255, 0, 0, 0.1);
+transition: all 0.3s ease 0s;
+cursor: pointer;
+outline: none;
+}
+
+button:hover {
+background-color: #00c3ff;
+box-shadow: 0px 15px 20px rgba(0, 119, 255, 0.4); 
+color: #fff;
+transform: translateY(-7px);
+  }
+
+  button:active {
+    transform: translateY(-1px);
+      }
+
+
+      .card {
+        height: 300px;
+        width: 300px;
+        border-radius: 4px;
+        display: grid;
+        place-items: center;
+        grid-template-areas: "main";
+        overflow: hidden;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      
+      .card > * {
+        grid-area: main;
+      }
+      
+      .card > .card-img-top {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        transition: transform 400ms, filter 400ms;
+      }
+      
+      .card > .text {
+        opacity: 0;
+        color: white;
+        font-size: 1.8em;
+        background: linear-gradient(to right, white 40%, blue 46.5%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: opacity 400ms, transform 400ms;
+      }
+      
+      .card > .card-title {
+        margin-top: 10px; /* Ajusta el valor según sea necesario */
+      }
+      
+      .card:hover > .card-img-top,
+      .card:focus > .card-img-top {
+        transform: scale(1.1);
+        filter: brightness(0.4);
+      }
+      
+      .card:hover > .text,
+      .card:focus > .text {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+
+      .icono {
+        width: 5%;
+        height: 5%;
+      }
+      
+      .card-text {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+      }
+      
+
+
+
+
